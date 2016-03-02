@@ -20,14 +20,14 @@ Open up `config/app.php` and find the `providers` key.
 ~~~
 'providers' => array(
     // ...
-    'Fornaza\Laravel\Provider\MonologMysqlHandlerServiceProvider'
+    Fornaza\Laravel\Provider\MonologMysqlHandlerServiceProvider::class,
 );
 ~~~
 
 Publish config using artisan CLI.
 
 ~~~
-php artisan config:publish pedrofornaza/monolog-mysql
+php artisan vendor:publish
 ~~~
 
 Migrate tables.
